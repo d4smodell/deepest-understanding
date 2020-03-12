@@ -1,0 +1,16 @@
+.content {
+    grid-area: c;
+    background-color: rgb(173, 171, 184);
+  }
+  
+  .item {
+      color: rgb(255, 255, 255);
+  }
+
+  .postsArea {
+      padding: 10px;;
+  }
+
+  .posts {
+      padding-top: 15px
+  }

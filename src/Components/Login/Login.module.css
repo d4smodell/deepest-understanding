@@ -1,0 +1,8 @@
+.logArea {
+    padding: 10px;
+}
+
+.formSummaryError {
+    padding: 5px;
+    color: rgb(92, 0, 0);
+}

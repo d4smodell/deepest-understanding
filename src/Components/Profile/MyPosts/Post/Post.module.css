@@ -1,0 +1,15 @@
+.content {
+    grid-area: c;
+    background-color: rgb(173, 171, 184);
+  }
+  
+  .item {
+      color: rgb(255, 255, 255);
+      padding: 5px;
+  }
+
+  .item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%
+  }

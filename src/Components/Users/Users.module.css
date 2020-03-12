@@ -1,0 +1,28 @@
+.photo {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.usersArea {
+    padding: 20px;
+}
+
+.selectedPage {
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.counter {
+    padding: 10px;
+}
+
+.usersCount {
+    padding: 5px;
+}
+
+.toggleLoader {
+    padding-left: 700px;
+    width: 100px;
+}
