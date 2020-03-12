@@ -6,9 +6,10 @@ const SET_STATUS = 'SET_STATUS'
 
 let initialState = {
         postData: [
-            {id: 1, post: 'Design is great!'},
-            {id: 2, post: 'Project is made by Teacher'},
-            {id: 3, post: 'Stylish Onizuka'},
+            {id: 1, post: 'PET_PROJECT'},
+            {id: 2, post: 'REACT-REDUX'},
+            {id: 3, post: 'POST'},
+            {id: 4, post: 'POST'},
           ],
         profile: null,
         status: ''
