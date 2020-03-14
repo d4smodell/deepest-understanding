@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './ProfileInfo.module.css'
-import ProfileStatus from './ProfileStatus'
+import ProfileStatusWithHooks from './ProfileStatusWithHooks'
 
 const ProfileInfo = props => {
     if(!props.profile) {
@@ -15,7 +15,7 @@ const ProfileInfo = props => {
             <img src={props.profile.photos.large ? props.profile.photos.large : 'https://sun9-29.userapi.com/c845019/v845019139/49571/mhdxvl1yjDE.jpg'} alt='img'/>
             <div>{props.profile.fullName ? props.profile.fullName : 'Name'}</div>
             <div>{props.profile.lookingForAJobDescription ? props.profile.lookingForAJobDescription : 'Looking for a Job'}</div>
-            <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+            <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
         </div>
         </div>
     )
