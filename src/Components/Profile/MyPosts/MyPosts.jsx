@@ -3,7 +3,7 @@ import s from './MyPosts.module.css'
 import Post from './Post/Post'
 import AddNewPostFormRedux from './MyPostsForm'
 
-const MyPosts = props => {
+const MyPosts = React.memo (props => {
   let state = props.profilePage
 
   let postsElements = state.postData.map(p => {
@@ -26,6 +26,7 @@ const MyPosts = props => {
         </div>
     )
 }
+)
 
 
 
