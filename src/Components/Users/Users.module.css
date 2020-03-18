@@ -26,3 +26,16 @@
     padding-left: 700px;
     width: 100px;
 }
+
+.paginator {
+    margin: 10px;
+}
+
+.pageNumber {
+    padding: 1px;
+}
+
+.pageNumber.selectedPage {
+    font-weight: bold;
+    color: aliceblue;
+}
