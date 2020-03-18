@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderContainer from './Components/Header/HeaderContainer'
 import Navbar from './Components/Navbar/Navbar'
+import store from './redux/redux-store'
 import ProfileContainer from './Components/Profile/ProfileContainer'
 import DialogsContainer from './Components/Dialogs/DialogsContainer'
 import s from './Components/Users/Users.module.css'
@@ -9,6 +10,7 @@ import News from './Components/News/News'
 import Settings from './Components/Settings/Settings'
 import UsersContainer from './Components/Users/UsersContainer'
 import {BrowserRouter, Route} from 'react-router-dom'
+import {Provider} from 'react-redux'
 import Login from './Components/Login/Login'
 import './App.css';
 import { withRouter } from 'react-router-dom'
@@ -59,4 +61,14 @@ let mapDispatchToProps = {
 
 
 
-export default compose(connect(mapStateToProps, mapDispatchToProps), withRouter)(App)
+let AppContainer = compose(connect(mapStateToProps, mapDispatchToProps), withRouter)(App)
+
+let MainApp = props => {
+  return <BrowserRouter>
+  <Provider store={store}>
+  <AppContainer />
+  </Provider>
+  </BrowserRouter>
+}
+
+export default MainApp
